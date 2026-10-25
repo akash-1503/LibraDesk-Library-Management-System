@@ -61,21 +61,6 @@ function Sidebar({ pathname, onNavigate }) {
           })}
         </nav>
       </div>
-
-      <div className="mt-auto p-4">
-        <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-4">
-          <div className="mb-2 flex items-center gap-2">
-            <span className="h-2 w-2 rounded-full bg-emerald-400" />
-            <p className="text-xs font-semibold text-white">Development mode</p>
-          </div>
-          <p className="text-xs leading-5 text-slate-400">
-            Dashboard data is temporary. Database integration comes later.
-          </p>
-        </div>
-        <p className="px-2 pb-1 pt-4 text-xs text-slate-500">
-          LibraDesk · Library workspace
-        </p>
-      </div>
     </aside>
   );
 }
@@ -126,22 +111,13 @@ export default function AppLayout({ children }) {
             </button>
 
             <div className="min-w-0">
-              <p className="text-xs font-medium text-slate-500">
-                Library workspace / {currentPage}
-              </p>
+             
               <h1 className="truncate text-lg font-bold tracking-tight sm:text-xl">
                 {currentPage}
               </h1>
             </div>
           </div>
 
-          <div className="ml-3 flex items-center gap-3">
-        
-
-            <div className="flex h-10 w-10 items-center justify-center rounded-full bg-emerald-100 text-sm font-bold text-emerald-800 ring-4 ring-emerald-50">
-              LD
-            </div>
-          </div>
         </header>
 
         <main className="mx-auto w-full max-w-[1600px] p-4 sm:p-6 lg:p-10">
